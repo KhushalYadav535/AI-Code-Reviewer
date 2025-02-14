@@ -8,8 +8,9 @@
     ],
     "routes": [
         {
-            "src": "/.*",
+            "src": "/ai/review(.*)",
             "dest": "server.js"
         }
     ]
 }
+
