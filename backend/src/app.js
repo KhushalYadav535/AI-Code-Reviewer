@@ -1,5 +1,4 @@
 const express = require("express");
-
 const aiRoutes = require("../src/routes/ai.routes");
 const cors=require("cors")
 
@@ -21,5 +20,7 @@ app.use("/ai", aiRoutes);
 app.use("*", (req, res) => {
     res.status(404).json({ error: "Route not found" });
 });
+
+
 
 module.exports = app;
